@@ -1,0 +1,9 @@
+{
+  "name": "project_api",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "~4.2.0",
+    "shopify-node-api": "^1.4.10"
+  }
+}

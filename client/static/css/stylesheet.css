@@ -1,0 +1,28 @@
+.container {
+	margin: 0px auto;
+}
+
+
+.product_iamge {
+	vertical-align: top;
+	display: inline-block;
+	width: 200px;
+	margin-right: 80px;
+}
+
+.product_iamge img {
+	width: 100%;
+	height: 100%;
+}
+
+.product_info {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+#partials {
+	text-align: center;
+}

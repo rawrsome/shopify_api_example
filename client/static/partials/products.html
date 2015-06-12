@@ -1,0 +1,25 @@
+<div ng-controller="productsController">
+	<!-- filter items -->
+	<label for='filter'>Search:</label>
+	<input id='filter' type='text' placeholder="Filter.." ng-model="filter_title">
+
+	<h1>Products</h1>
+
+	<div class="product_iamge" ng-repeat="product in products | filter:filter_title">
+		<a href="#/show/{{product.id}}" ng-click="showProduct(product.id)">
+			<img src="{{product.image.src}}">
+		</a>
+		<div class="product_info">
+			<!-- display title -->
+			<h5>{{product.title}}</h5>
+			<!-- display price -->
+			<h5>$ {{product.variants[0].price}}</h5>
+			<!-- display description -->
+			<!-- <p id="product_description">Description: {{product.body_html}}</p> -->
+			<!-- display product inventory -->
+			<p>Inventory: {{product.variants[0].inventory_quantity}}</p>
+			<!-- display product tags -->
+			<p>Tags: <a href="#/">{{product.tags}}</a></p>
+		</div> <!--end product_info-->
+ 	</div> <!--end product_image-->
+</div> <!--end ng-controller-->
