@@ -69,6 +69,6 @@ var App = angular.module('PureApp', ['ngRoute']);
 		MainFactory.getProducts(function(data) {
 			$scope.products = data.products;
 			console.log(data);
-		})
+		});
 	});
 	// <==== end showProducts

@@ -1,5 +1,5 @@
-// ====> start get all products
 module.exports = function(app, Shopify) {
+// ====> start get all products
 	app.get('/products', function(req, res) {
 		Shopify.get('/admin/products.json', function(err, data, headers) {
 			// console.log(data); 
